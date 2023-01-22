@@ -1,0 +1,58 @@
+<html>
+    <title>W3.CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="w3.css">
+    <body>
+	<img src="p.jfif" width="100%">
+        <div class="w3-container-fluid">
+            
+        </div>
+        <center>
+        <div class="w3-bar w3-purple">
+            <button class="w3-bar-item w3-button" onclick="openKota('Home')">Home</button>
+            <button class="w3-bar-item w3-button" onclick="openKota('Los Angeles Lakers')">Los Angeles Lakers</button>
+            <button class="w3-bar-item w3-button" onclick="openKota('Coach')">Coach</button>
+            <button class="w3-bar-item w3-button" onclick="openKota('Arena')">Arena</button>
+            <button class="w3-bar-item w3-button" onclick="openKota('About')">About</button>
+			<button class="w3-bar-item w3-button" onclick="openKota('Ball')">Ball</button>
+        </div>
+        <div id="Home" class="w3-container kota w3-animate-zoom w3-padding-16" style="display:none">
+            <img src="los.jfif" width="40%">
+        </div>
+        <div id="Los Angeles Lakers" class="w3-container kota w3-animate-fading w3-padding-16" style="display:none">
+            <img src="losa.jfif" width="40%">
+            <p>Los Angeles Lakers adalah sebuah tim basket profesional Amerika Serikat yang bermarkas di Los Angeles. Lakers berkompetisi di National Basketball Association (NBA), sebagai anggota Wilayah Barat, Divisi Pasifik. Lakers memainkan pertandingan kandang mereka di Staples Center, sebuah arena yang juga digunakan oleh klub NBA lain yaitu Los Angeles Clippers, Los Angeles Sparks dari Women's National Basketball Association, dan Los Angeles Kings dari National Hockey League.[9] Lakers adalah salah satu tim tersukses dalam sejarah NBA, dan telah memenangkan 17 gelar liga—jumlah terbanyak bersama dengan Boston Celtics.</p>
+        </div>
+        <div id="Coach" class="w3-container kota w3-animate-bottom w3-padding-16" style="display:none">
+            <img src="coach.jfif" width="40%">
+            <p>Darvin Ham Sr. (lahir 23 Juli 1973) adalah seorang pelatih bola basket profesional Amerika dan mantan pemain yang menjadi pelatih kepala Los Angeles Lakers dari National Basketball Association (NBA). Dia bermain bola basket perguruan tinggi untuk Texas Tech Red Raiders sebelum bermain delapan musim di NBA dari 1996 hingga 2005. Dia memenangkan kejuaraan NBA bermain dengan Detroit Pistons pada tahun 2004. Ham juga memiliki pengalaman internasional singkat di Spanyol dan kemudian di Filipina, serta di NBA Development League pada tahun 2007 dan 2008.</p>
+        </div>
+        <div id="Arena" class="w3-container kota w3-animate-top w3-padding-16" style="display:none">
+            <img src="arena.jfif" width="40%">
+            <p>Crypto.com Arena is a multi-purpose indoor arena in Downtown Los Angeles. Adjacent to the L.A. Live development, it is located next to the Los Angeles Convention Center complex along Figueroa Street. The arena opened on October 17, 1999; it was previously known as Staples Center until December 2021 when Crypto.com acquired the naming rights.
+			   It is owned and operated by the Arturo L.A. Arena Company and Anschutz Entertainment Group. The arena is home venue to the Los Angeles Kings of the National Hockey League (NHL), the Los Angeles Lakers and the Los Angeles Clippers of the National Basketball Association (NBA), and the Los Angeles Sparks of the Women's National Basketball Association (WNBA). The Los Angeles Avengers of the Arena Football League (AFL) and the South Bay Lakers of the NBA G League were also tenants; the Avengers folded in 2009, and the D-Fenders moved to the Lakers' practice facility at the Toyota Sports Center in El Segundo, California for the 2011–12 season. Crypto.com Arena is host to over 250 events and nearly 4 million guests each year. It is the only arena in the NBA shared by two teams, as well as one of only three North American professional sports venues to host two teams from the same league. MetLife Stadium, the home of the National Football League's New York Giants and New York Jets, and SoFi Stadium, the home of the National Football League's Los Angeles Rams and Los Angeles Chargers, are the others. Crypto.com Arena is the venue of the Grammy Awards ceremony and will host the basketball competition during the 2028 Summer Olympics. In 2024, the Clippers are scheduled to leave Crypto.com Arena for their own building, Intuit Dome.
+			   Following the January 2020 death of NBA legend Kobe Bryant, his daughter Gianna, and 7 others in a helicopter crash, the city of Los Angeles designated August 24 as Kobe Bryant Day, on which they announced that between the boulevards of Olympic and Martin Luther King Jr., Figueroa Street will be renamed Kobe Bryant Boulevard to honor his memory; this area includes the address of Crypto.com Arena.</p>
+        </div>
+        <div id="About" class="w3-container kota w3-ainmate-left w3-padding-16" style="display:none">
+            <img src="about.jfif" width="20%">
+            <h1>Fabian Akbar Rabbani
+			<br>10122503 
+			IF-2</h1>
+        </div>
+		 <div id="Ball" class="w3-container w3-center kota w3-spin w3-padding-16" style="display:none">
+           <h1><br><br><br><br><br><br><br><br><br><br><br><br><br><br><center><img src="ball.jpg" width="20%"></h1>
+        </div>
+<script>
+function openKota(namakota) 
+{
+ var i;
+ var x = document.getElementsByClassName("kota");
+ for (i = 0; i < x.length; i++)
+{
+ x[i].style.display = "none"; 
+}
+ document.getElementById(namakota).style.display = "block"; 
+}
+</script>
+</body>
+</html>
